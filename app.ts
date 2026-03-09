@@ -44,3 +44,40 @@
 //   console.log(arr);
 // }
 // abc("hii", "he;llo", "narayana");
+
+////////////////////////////////////////////
+
+// function abc(a: string): void;
+
+// function abc(a: string, b: number): number;
+
+// function abc(a: any, b?: any) {
+//   if (typeof a === "string" && b === "undefined") {
+//     console.log(a);
+//   }
+//   if (typeof a === "string" && typeof b === "number") {
+//     return 123;
+//   }
+// }
+// abc("hii");
+// abc("hii", 12);
+
+function abc(a: string): void;
+
+function abc(a: string, b: number): number;
+
+function abc(a: any, b?: any): void | number {
+  if (typeof a === "string" && typeof b === "undefined") {
+    console.log(a);
+    return;
+  }
+
+  if (typeof a === "string" && typeof b === "number") {
+    console.log("number", a, b);
+
+    return 123;
+  }
+}
+
+abc("hii");
+abc("hii", 12);
