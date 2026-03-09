@@ -34,3 +34,13 @@
 // abc("sita", 22, "female");
 
 /////////////////////////////////
+
+// function sum(...arr: number[]) {
+//   console.log(arr);
+// }
+// sum(1, 2, 3, 4, 5);
+
+// function abc(...arr: string[]) {
+//   console.log(arr);
+// }
+// abc("hii", "he;llo", "narayana");
