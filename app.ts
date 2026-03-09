@@ -11,12 +11,28 @@
 // console.log(d1);
 // console.log(d2);
 
-class BottleMaker {
-  constructor(
-    public brand: string,
-    public price: number,
-  ) {
-    console.log("hii crrt");
-  }
-}
-let b1 = new BottleMaker("milton", 1200);
+// class BottleMaker {
+//   constructor(
+//     public brand: string,
+//     public price: number,
+//   ) {
+//     console.log("hii crrt");
+//   }
+// }
+// let b1 = new BottleMaker("milton", 1200);
+
+/////////////////////////////////////
+
+// class Person {
+//   constructor(protected name: string) {}
+//   showName() {
+//     console.log("hii");
+//   }
+// }
+
+// class Child extends Person {
+//   childFunction() {
+//     console.log(this.name);
+//   }
+// }
+// let c = new Child("karma");
