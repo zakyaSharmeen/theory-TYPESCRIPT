@@ -1,38 +1,36 @@
-// type aliases- custom name to type means
-// type ID = string; // now id means a string u can put id instead of string listeraaly oin the dt types name section
-
-// class Device {
-//   name = "harsh";
-//   price = 1200;
-//   category = "digital";
-// }
-// let d1 = new Device();
-// let d2 = new Device();
-// console.log(d1);
-// console.log(d2);
-
-// class BottleMaker {
-//   constructor(
-//     public brand: string,
-//     public price: number,
-//   ) {
-//     console.log("hii crrt");
-//   }
-// }
-// let b1 = new BottleMaker("milton", 1200);
-
-/////////////////////////////////////
-
 // class Person {
-//   constructor(protected name: string) {}
-//   showName() {
-//     console.log("hii");
+//   constructor(public _name: string) {}
+
+//   get name() {
+//     return this._name;
+//   }
+//   set name(value: string) {
+//     this._name = value;
 //   }
 // }
 
-// class Child extends Person {
-//   childFunction() {
-//     console.log(this.name);
-//   }
+// let Person2 = new Person("ram");
+// console.log(Person2._name);
+// console.log(Person2.name);
+// Person2.name = "sita";
+// console.log(Person2);
+
+// function abc(name: string, age: number, cb: (arg: string) => void) {
+//   cb("hii coming from inside");
 // }
-// let c = new Child("karma");
+// abc("har", 12, (arg: string) => {
+//   console.log("hii mitho");
+// });
+
+/////////////////
+// function abc(
+//   name: string,
+//   age: number,
+//   gender: string = "not to be disclosed",
+// ) {
+//   console.log({ name: name, age: age, gender: gender });
+// }
+// abc("har", 12);
+// abc("sita", 22, "female");
+
+/////////////////////////////////
